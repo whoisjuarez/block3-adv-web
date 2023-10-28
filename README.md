@@ -2,5 +2,5 @@
 Block 3 - Advanced Web Programming course notes
 
 ## Exercises:
-- Palindrome / Basics: palindrome_basics.php
-- Mouse / Objects: mouse_objects.php
+- Basics / Palindrome: palindrome_basics.php
+- Objects / Mouse: mouse_objects.php
