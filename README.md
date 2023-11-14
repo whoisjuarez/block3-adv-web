@@ -2,10 +2,10 @@
 Block 3 - Advanced Web Programming course assignments
 
 ## Exercises:
-**- Basics - Palindrome:** palindrome_basics.php
+**- Basics - Palindrome:** exercise/palindrome_basics.php
 
-**- Objects - Mouse:** mouse_objects.php
+**- Objects - Mouse:** exercise/mouse_objects.php
 
-**- Database 3NF Normalization:** 3nf.md
+**- Database 3NF Normalization:** exercise/3nf.md
 
-**- Inheritance:** inheritance.php
+**- Inheritance:** exercise/inheritance.php
