@@ -8,4 +8,4 @@ Block 3 - Advanced Web Programming course assignments
 
 **- Database 3NF Normalization:** 3nf.md
 
-**- Inheritance - inheritance.php
+**- Inheritance:** inheritance.php
