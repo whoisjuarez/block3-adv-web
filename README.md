@@ -1,2 +1,4 @@
 # block3-adv-web
-Block 3 - Advanced Web Programming course notes
+## project-1
+Block 3 - Advanced Web Programming
+Project 1
