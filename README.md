@@ -9,3 +9,6 @@ Block 3 - Advanced Web Programming course assignments
 **- Database 3NF Normalization:** exercise/3nf.md
 
 **- Inheritance:** exercise/inheritance.php
+
+## Projects:
+**- Project 1 - Prep
