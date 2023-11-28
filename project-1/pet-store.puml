@@ -5,7 +5,7 @@ scale 1000 width
 class Pet {
    #PetID;
    +Species;
-   -Adoption-Fee;
+   -AdoptionFee;
 
    +__construct()
    +getPetID()
@@ -18,7 +18,7 @@ class PetPhysicalInfo extends Pet{
    -Gender;
    -Age;
    -Size;
-   -Coat-Length;
+   -CoatLength;
    -Color;
 
    +__construct()
