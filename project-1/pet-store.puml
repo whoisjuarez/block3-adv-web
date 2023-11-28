@@ -1,0 +1,68 @@
+@startuml Pet Adoption
+
+scale 1000 width
+
+class Pet {
+   #PetID;
+   +Species;
+   -Adoption-Fee;
+
+   +__construct()
+   +getPetID()
+   +getSpecies()
+   +getAdoptionFee()
+}
+
+class PetPhysicalInfo extends Pet{
+   -Breed;
+   -Gender;
+   -Age;
+   -Size;
+   -Coat-Length;
+   -Color;
+
+   +__construct()
+   +getBreed()
+   +getGender()
+   +getAge()
+   +getSize()
+   +getCoatLength()
+   +getColor()
+}
+
+class PetAbstractInfo extends Pet {
+   -Name;
+   -Personality;
+   -GoodWith;
+   -Health;
+   -CareBehavior;
+
+   +__construct()
+   +getName()
+   +getPersonality()
+   +getGoodWith()
+   +getHealth()
+   +getCareBehavior()
+}
+
+class Toys {
+   #ToyID;
+   -ToyDesc;
+   -ToyPrice;
+
+   +__construct()
+   +getToyID()
+   +getToyDesc()
+   +getToyPrice()
+}
+
+class SpeciesToys extends Toys {
+   +Species;
+
+   +__construct()
+   +getSpecies()
+}
+
+Pet --> Toys
+
+@enduml
