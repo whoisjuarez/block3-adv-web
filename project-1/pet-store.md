@@ -69,7 +69,7 @@
 | T365  | Cat Play Treat Puzzle | 23.24    |
 
 ### Animal relation
-
+<!-- Not a class, just db connection -->
 | ToyID | Species |
 | ----- | ------- |
 | T213  | Cat     |

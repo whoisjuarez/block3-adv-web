@@ -56,13 +56,6 @@ class Toys {
    +getToyPrice()
 }
 
-class SpeciesToys extends Toys {
-   +Species;
-
-   +__construct()
-   +getSpecies()
-}
-
-Pet --> Toys
+Pet --> Toys : db connection
 
 @enduml
