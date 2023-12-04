@@ -158,7 +158,7 @@ CREATE TABLE `pet` (
   `petNeuteredID` int(11) NOT NULL,
   `petToySpeciesID` int(11) NOT NULL,
   `petDescription` varchar(2000) NOT NULL,
-  `petFee` int(11) NOT NULL
+  `petFee` decimal(5,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
