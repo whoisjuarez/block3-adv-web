@@ -36,7 +36,8 @@
             $result = $mysqli->query(
               "SELECT breed.*, species.speciesName
                FROM breed
-               INNER JOIN species ON breed.breedSpeciesID = species.speciesID;
+               INNER JOIN species ON breed.breedSpeciesID = species.speciesID
+               ORDER BY breedID ASC;
             ");
             
             while($row = $result->fetch_assoc()) {
@@ -153,7 +154,9 @@
       public function selectColors(){
          $mysqli = $this->connect();
          if($mysqli) {
-            $result = $mysqli->query("SELECT * FROM color");
+            $result = $mysqli->query(
+               "SELECT * FROM color
+               ORDER BY colorID ASC;");
             while($row = $result->fetch_assoc()) {
                $results[] = $row;
             }
@@ -277,7 +280,8 @@
               "SELECT *
                FROM toys
                NATURAL JOIN toy_species
-               INNER JOIN species ON toys.toySpeciesID = species.speciesID;
+               INNER JOIN species ON toys.toySpeciesID = species.speciesID
+               ORDER BY toyID ASC;
             ");
             while($row = $result->fetch_assoc()) {
                $results[] = $row;
@@ -531,7 +535,8 @@
                INNER JOIN `coat-length` ON pet.petCoatLengthID = `coat-length`.coatLengthID
                INNER JOIN vaccines ON pet.petVaccinesID = vaccines.vaccineID
                INNER JOIN neutered ON pet.petNeuteredID = neutered.neuteredID
-               INNER JOIN toy_species ON pet.petToySpeciesID = toy_species.toySpeciesID;
+               INNER JOIN toy_species ON pet.petToySpeciesID = toy_species.toySpeciesID
+               ORDER BY petID ASC;
             ");
             while($row = $result->fetch_assoc()) {
                $results[] = $row;

@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
    include_once ("models/model.php");
 
@@ -53,7 +53,11 @@ error_reporting(E_ALL);
          // }
 
          $this->breedModel->addBreed($breedName, $speciesID);
+
+         header("Location: ?page=breeds"); //to avoid resubmitting form when refreshing page
       }
+
+
 
       // Delete breed
       public function deleteBreed() {
@@ -98,6 +102,8 @@ error_reporting(E_ALL);
      public function addColor() {
          $colorName = $_POST['colorName'];
          $this->colorModel->addColor($colorName);
+
+         header("Location: ?page=colors"); //to avoid resubmitting form when refreshing page
       }
 
       // Delete color
@@ -145,6 +151,8 @@ error_reporting(E_ALL);
          $toyPrice = $_POST['toyPrice'];
 
          $this->toyModel->addToy($toyName, $toyDescription, $speciesID, $toyQty, $toyPrice);
+
+         header("Location: ?page=toys"); //to avoid resubmitting form when refreshing page
       }
 
       // Delete toy
@@ -212,6 +220,8 @@ error_reporting(E_ALL);
          $petFee = $_POST['petFee'];
 
          $this->petModel->addPet($petName, $speciesID, $breedID, $genderID, $ageID, $colorID, $coatLengthID, $vaccinesID, $neuteredID, $toySpeciesID, $petDescription, $petFee);
+
+         header("Location: ?page=pets"); //to avoid resubmitting form when refreshing page
       }
 
       // Delete pet
