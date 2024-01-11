@@ -21,11 +21,11 @@
       ?>
    </select>
 
-   <label for="toyPrice">Price</label>
-   <input type="text" name="toyPrice" placeholder="Toy Price" value="<?php echo $toy['toyPrice']; ?>">
-
    <label for="toyQty">Quantity</label>
    <input type="text" name="toyQty" placeholder="Toy Quantity" value="<?php echo $toy['toyQty']; ?>">
+
+   <label for="toyPrice">Price</label>
+   <input type="text" name="toyPrice" placeholder="Toy Price" value="<?php echo $toy['toyPrice']; ?>">
 
    <div class='btn-flex'>
       <div class='btn-flex'>

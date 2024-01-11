@@ -47,6 +47,7 @@ body {
       hsl(188deg 90% 79%) 63%,
       hsl(234deg 100% 81%) 100%
    );
+   background-attachment: fixed;
    /* 
    Link for gradient generator: 
    https://www.joshwcomeau.com/gradient-generator?colors=ffffff|99fff8|f4d0e4|99fff8|add7f8&angle=0&colorMode=hcl&precision=1&easingCurve=1.1|1|-0.1|0 */
