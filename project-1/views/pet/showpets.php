@@ -27,9 +27,9 @@
 
                   <div class='neutered'>" . $pet_solo['neuteredName'] . "</div>
 
-                  <div class='toy'>" . $pet_solo['toySpeciesName'] . "</div>
-
                   <div class='description'>" . $pet_solo['petDescription'] . "</div>
+
+                  <div class='toy'>" . $pet_solo['toySpeciesName'] . "</div>
                   
                   <div class='fee'>" . $pet_solo['petFee'] . "</div>
                </div>

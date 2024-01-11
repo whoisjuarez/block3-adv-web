@@ -94,6 +94,9 @@
       ?>
    </select>
 
+   <label for="petDescription">Description</label>
+   <input type="text" name="petDescription" placeholder="Pet Description" value="<?php echo $pet['petDescription']; ?>">
+
    <label for="toySpeciesID">Toy Species</label>
    <select name="toySpeciesID">
       <?php
@@ -104,9 +107,6 @@
          }
       ?>
    </select>
-
-   <label for="petDescription">Description</label>
-   <input type="text" name="petDescription" placeholder="Pet Description" value="<?php echo $pet['petDescription']; ?>">
 
    <label for="petFee">Fee</label>
    <input type="text" name="petFee" placeholder="Pet Fee, e.g.: 10.99" value="<?php echo $pet['petFee']; ?>">

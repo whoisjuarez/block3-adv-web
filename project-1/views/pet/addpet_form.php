@@ -117,6 +117,9 @@
       }
    ?>
 
+   <label for="petDescription">Description</label>
+   <input type="text" name="petDescription" placeholder="Pet Description" required>
+
    <label for="toySpeciesID">Toy Species</label>
    <?php
       if ($toySpecies) {
@@ -130,9 +133,6 @@
          echo 'No toy species found';
       }
    ?>
-
-   <label for="petDescription">Description</label>
-   <input type="text" name="petDescription" placeholder="Pet Description" required>
 
    <label for="petFee">Fee</label>
    <input type="text" name="petFee" placeholder="Pet Fee, e.g: 10.99" required>

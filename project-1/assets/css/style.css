@@ -204,7 +204,7 @@ form .btn-flex{
    padding: 10px 15px;
    background-color: black;
    border: 1px solid black;
-   border-radius: 50px;
+   /* border-radius: 50px; */
    font-size: 1rem;
    color: white;
 }
@@ -316,7 +316,7 @@ content: "ID: ";
 }
 
 .gender::before {
-   content: "BreedGender: ";
+   content: "Gender: ";
 }
 
 .color::before {
