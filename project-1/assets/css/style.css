@@ -226,25 +226,32 @@ form .btn-flex{
 }
 
 .btn,
+.btn-confirm,
 .btn-delete{
    padding: 10px 15px;
    background-color: black;
    border: 1px solid black;
    font-size: 1rem;
    color: white;
+   cursor: pointer;
 }
 
 .btn:hover,
-.btn-delete:hover,
+/* .btn-confirm:hover, */
+/* .btn-delete:hover, */
 .credit a:hover{
    background-color: white;
    color: black;
-   cursor: pointer;
 }
 
 .btn-delete:hover{
    color: white;
    background-color: rgb(255, 45, 111);
+}
+
+.btn-confirm:hover{
+   color: white;
+   background-color: rgb(23, 214, 125);
 }
 
 .menu-home .btn {

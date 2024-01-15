@@ -23,7 +23,7 @@
       <div class='btn-flex'>
          <a href="?page=breeds" class="btn"><i class="fa-solid fa-xmark"></i></a>
 
-         <button type='submit' name='submitBreed' class='btn'><i class="fa-solid fa-check"></i></button>
+         <button type='submit' name='submitBreed' class='btn-confirm'><i class="fa-solid fa-check"></i></button>
       </div>
    </div>
 
