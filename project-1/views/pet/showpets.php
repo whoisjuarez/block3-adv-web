@@ -1,4 +1,4 @@
-<h3>All Pets</h3>
+<h3>Pets</h3>
 
 <article>
    <?php
@@ -6,12 +6,23 @@
          foreach($pets as $pet_solo) {
             echo "
             <section class='card'>
-               <div class='wrapper'>
+               <div class='wrapper'>";
+
+                  // Check the speciesName to set the right icon
+                  if ($pet_solo['speciesName'] == 'Canine') {
+                     echo '<i class="icon-cat-dog fa-solid fa-shield-dog"></i>';
+                  } elseif ($pet_solo['speciesName'] == 'Feline') {
+                     echo '<i class="icon-cat-dog fa-solid fa-shield-cat"></i>';
+                  }
+
+                  echo"
                   <div class='name'>" . $pet_solo['petName'] . "</div>
 
                   <div class='id'>" . $pet_solo['petID'] . "</div>
 
                   <div class='species'>" . $pet_solo['speciesName'] . "</div>
+
+                  
 
                   <div class='breed'>" . $pet_solo['breedName'] . "</div>
 

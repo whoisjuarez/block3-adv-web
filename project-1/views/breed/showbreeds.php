@@ -6,7 +6,16 @@
          foreach($breeds as $breed_solo) {
             echo "
             <section class='card'>
-               <div class= 'wrapper'>
+               <div class= 'wrapper'>";
+
+               // Check the speciesName to set the right icon
+               if ($breed_solo['speciesName'] == 'Canine') {
+                  echo '<i class="icon-cat-dog fa-solid fa-shield-dog"></i>';
+               } elseif ($breed_solo['speciesName'] == 'Feline') {
+                  echo '<i class="icon-cat-dog fa-solid fa-shield-cat"></i>';
+               }
+
+               echo"
                   <div class='name'>
                      " . $breed_solo['breedName'] . "
                   </div>

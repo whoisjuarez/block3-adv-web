@@ -19,13 +19,16 @@
    <body>
       <main class="container">
          <h1><i class="fa-solid fa-shield-cat"></i> Cats & Dogs <i class="fa-solid fa-shield-dog"></i></h1>
-         <h1>Adoption Store</h1>
-         <h2>MVC + MySQL | André Cardoso</h2>
-
+         <h2>Adoption Store</h2>
          <!-- adding controller -->
          <?php
             include_once("controllers/controller.php");
          ?>
+
+         <div class="credit">
+            <h5>MVC + MySQL | André Cardoso</h5>
+            <a href="https://github.com/whoisjuarez/block3-adv-web/tree/assignments/project-1" target="_blank">GitHub Repository</a>
+         </div>
       </main>
       
    </body>
