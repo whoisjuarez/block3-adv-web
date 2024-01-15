@@ -198,6 +198,7 @@ GENERAL STYLES
 }
 
 /* Buttons */
+
 .credit a{
    font-size: 1rem;
    font-weight: 600;
@@ -237,8 +238,6 @@ form .btn-flex{
 }
 
 .btn:hover,
-/* .btn-confirm:hover, */
-/* .btn-delete:hover, */
 .credit a:hover{
    background-color: white;
    color: black;
@@ -283,6 +282,7 @@ padding: 10px 13px;
 }
 
 /* Cards */
+
 .card {
    border: 1px solid black;
    padding: 1rem;
@@ -291,11 +291,6 @@ padding: 10px 13px;
    justify-content: space-between;
    margin-bottom: 3rem;
 }
-
-/* .card .wrapper {
-   margin-bottom: 1rem;
-} */
-
 
 .id, 
 /* .name,  */
@@ -318,7 +313,7 @@ padding: 10px 13px;
 }
 
 .name{
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    font-weight: 600;
    text-decoration: underline;
    text-underline-offset: .5rem;
@@ -326,7 +321,7 @@ padding: 10px 13px;
 }
 
 .id::before, 
-.name::before, 
+/* .name::before,  */
 .species::before, 
 .breed::before, 
 .age::before, 
