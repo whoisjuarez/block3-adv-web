@@ -200,7 +200,8 @@ form .btn-flex{
    margin-top: .5rem;
 }
 
-.btn {
+.btn,
+.btn-delete{
    padding: 10px 15px;
    background-color: black;
    border: 1px solid black;
@@ -209,10 +210,16 @@ form .btn-flex{
    color: white;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-delete:hover{
    background-color: transparent;
    color: black;
    cursor: pointer;
+}
+
+.btn-delete:hover{
+   color: white;
+   background-color: rgb(255, 45, 111);
 }
 
 .menu-home .btn {
@@ -256,8 +263,9 @@ padding: 10px 13px;
    margin-bottom: 1rem;
 } */
 
+
 .id, 
-.name, 
+/* .name,  */
 .species, 
 .breed, 
 .age, 
@@ -274,6 +282,14 @@ padding: 10px 13px;
    font-size: 1rem;
    font-weight: 400;
    margin-bottom: .3rem;
+}
+
+.name{
+   font-size: 1.8rem;
+   font-weight: 600;
+   text-decoration: underline;
+   text-underline-offset: .5rem;
+   margin-bottom: .5rem;
 }
 
 .id::before, 
@@ -299,9 +315,9 @@ padding: 10px 13px;
 content: "ID: ";
 }
 
-.name::before {
-   content: "Name: ";
-}
+/* .name::before { */
+   /* content: "Name: "; */
+/* } */
 
 .species::before {
    content: "Species: ";

@@ -180,7 +180,7 @@
                INNER JOIN vaccines ON pet.petVaccinesID = vaccines.vaccineID
                INNER JOIN neutered ON pet.petNeuteredID = neutered.neuteredID
                INNER JOIN toy_species ON pet.petToySpeciesID = toy_species.toySpeciesID
-               ORDER BY petID ASC;
+               ORDER BY petID DESC;
             ");
             while($row = $result->fetch_assoc()) {
                $results[] = $row;

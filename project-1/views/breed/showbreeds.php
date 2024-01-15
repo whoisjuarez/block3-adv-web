@@ -7,12 +7,12 @@
             echo "
             <section class='card'>
                <div class= 'wrapper'>
-                  <div class='id'>
-                     " . $breed_solo['breedID'] . "
-                  </div>
-
                   <div class='name'>
                      " . $breed_solo['breedName'] . "
+                  </div>
+
+                  <div class='id'>
+                     " . $breed_solo['breedID'] . "
                   </div>
 
                   <div class='species'>
@@ -27,7 +27,7 @@
                      <div class='btn-flex'>
                         <button type='submit' name='editBreed' class='btn'><i class='fa-solid fa-pen-to-square'></i></button>
 
-                        <button type='submit' name='deleteBreed' class='btn'><i class='fa-solid fa-trash-can'></i></button>
+                        <button type='submit' name='deleteBreed' class='btn-delete'><i class='fa-solid fa-trash-can'></i></button>
                      </div>
                   </form>
                </div>

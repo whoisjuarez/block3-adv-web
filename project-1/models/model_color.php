@@ -31,7 +31,7 @@
          if($mysqli) {
             $result = $mysqli->query(
                "SELECT * FROM color
-               ORDER BY colorID ASC;");
+               ORDER BY colorID DESC;");
             while($row = $result->fetch_assoc()) {
                $results[] = $row;
             }

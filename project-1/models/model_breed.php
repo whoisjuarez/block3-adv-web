@@ -31,7 +31,7 @@
               "SELECT breed.*, species.speciesName
                FROM breed
                INNER JOIN species ON breed.breedSpeciesID = species.speciesID
-               ORDER BY breedID ASC;
+               ORDER BY breedID DESC;
             ");
             
             while($row = $result->fetch_assoc()) {

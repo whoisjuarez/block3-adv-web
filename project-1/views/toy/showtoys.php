@@ -7,10 +7,10 @@
             echo "
             <section class='card'>
                <div class='wrapper'>
+                  <div class='name'>" . $toy_solo['toyName'] . "</div>
+
                   <div class='id'>" . $toy_solo['toyID'] . "</div>
 
-                  <div class='name'>" . $toy_solo['toyName'] . "</div>
-                  
                   <div class='description'>" . $toy_solo['toyDescription'] . "</div>
 
                   <div class='species'>" . $toy_solo['speciesName'] . "</div>
@@ -27,7 +27,7 @@
                      <div class='btn-flex'>
                         <button type='submit' name='editToy' class='btn'><i class='fa-solid fa-pen-to-square'></i></button>
 
-                        <button type='submit' name='deleteToy' class='btn'><i class='fa-solid fa-trash-can'></i></button>
+                        <button type='submit' name='deleteToy' class='btn-delete'><i class='fa-solid fa-trash-can'></i></button>
                      </div>
                   </form>
                </div>

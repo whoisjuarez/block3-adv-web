@@ -58,7 +58,7 @@
                FROM toys
                NATURAL JOIN toy_species
                INNER JOIN species ON toys.toySpeciesID = species.speciesID
-               ORDER BY toyID ASC;
+               ORDER BY toyID DESC;
             ");
             while($row = $result->fetch_assoc()) {
                $results[] = $row;
